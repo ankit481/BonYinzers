@@ -32,7 +32,7 @@ app.debug = True
 
 @app.route('/')
 def index():
-    template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+    template = JINJA_ENVIRONMENT.get_template('templates/index2.html')
 
 
     return template.render()
