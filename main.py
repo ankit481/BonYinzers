@@ -37,6 +37,13 @@ def index():
 
     return template.render()
 
+@app.route('/more-graphs')
+def more_graphs():
+    template = JINJA_ENVIRONMENT.get_template('templates/more-graphs.html')
+
+
+    return template.render()
+
 
 @app.route('/about')
 def about():
