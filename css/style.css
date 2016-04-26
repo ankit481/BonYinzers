@@ -665,3 +665,7 @@ label {
 	display: block;
 	color: #fff;
 }
+
+.tableauPlaceholder{
+    height: 600px !important;
+}
