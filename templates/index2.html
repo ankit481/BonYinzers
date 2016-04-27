@@ -23,6 +23,32 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
+<!-- Sankey -->
+<style>
+
+  .node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+  }
+
+  .node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  .link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+  }
+
+  .link:hover {
+    stroke-opacity: .5;
+  }
+
+</style>
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -46,6 +72,7 @@
         <li><a href="#home" class="page-scroll">Home</a></li>
         <li><a href="#about-section" class="page-scroll">About</a></li>
         <li><a href="#understand-section" class="page-scroll">Understand Yelp</a></li>
+        <li><a href="#analysis-section" class="page-scroll">Feature Analysis</a></li>
         <li><a href="#services-section" class="page-scroll">Services</a></li>
         <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
         <li><a href="#team-section" class="page-scroll">Team</a></li>
@@ -119,6 +146,7 @@
     </div>
   </div>
 </div>
+
 <!-- Understanding Yelp Section -->
 <div id="understand-section">
   <div class="container">
@@ -129,7 +157,7 @@
       </div>
       <div class="row wow fadeInDown" data-wow-delay="200ms">
         <div class="col-md-8"> 
-          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 742px;'><noscript><a href='#'><img alt='Justification_Ranking ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Ranking&#47;Justification_Ranking&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='700' height='650' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Yelp_Ranking&#47;Justification_Ranking' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Ranking&#47;Justification_Ranking&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 750px; height: 742px;'><noscript><a href='#'><img alt='Justification_Ranking ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Ranking&#47;Justification_Ranking&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='750' height='650' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Yelp_Ranking&#47;Justification_Ranking' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Ranking&#47;Justification_Ranking&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
         </div>
         <div class="col-md-4">
           <div class="about-text">
@@ -155,7 +183,7 @@
           </div>
         </div>
         <div class="col-md-8"> 
-          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;New_Yelp_Word_Count_Attributes&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='750' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='New_Yelp_Word_Count_Attributes&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;New_Yelp_Word_Count_Attributes&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 750px; height: 742px;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;New_Yelp_Word_Count_Attributes&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='750' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='New_Yelp_Word_Count_Attributes&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;New_Yelp_Word_Count_Attributes&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
         </div>
       </div>
 
@@ -165,7 +193,7 @@
 
       <div class="row wow fadeInDown" data-wow-delay="200ms">
         <div class="col-md-8"> 
-          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 982px; height: 742px;'><noscript><a href='#'><img alt='Rank_Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Map&#47;Rank_Map&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='982' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Yelp_Map&#47;Rank_Map' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Map&#47;Rank_Map&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 750px; height: 742px;'><noscript><a href='#'><img alt='Rank_Map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Map&#47;Rank_Map&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='750' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Yelp_Map&#47;Rank_Map' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ye&#47;Yelp_Map&#47;Rank_Map&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
         </div>
         <div class="col-md-4">
           <div class="about-text">
@@ -180,6 +208,80 @@
   </div>
 </div>
 
+
+<div id="analysis-section">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center center wow fadeInDown">
+        <h2>Feature Analysis</h2>
+        <hr>
+      </div>
+      <div class="row wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="about-text text-center">
+            <h3><span class="color">Who</span> we are</h3>
+            <p>We are a group of four information technology students, two undergrad, and two masters, from Carnegie Mellon University. Our career paths have led us all to the Data Pipeline master course offered at the Human Computer Interaction Master Program. In this course we have learned may steps of the data pipeline, all leading to our final project which you have before you.</p>
+            <h3><span class="color">What's</span> our Purpose</h3>
+            <p>For our final project, which we have to encompass the whole data pipeline, we chose the Yelp Dataset Challenge. We were attracted to this set due to recent publicity about ho the city of Pittsburgh is considered one of the top food cities. Our task in this project is to explore and gain some insightful insights on the data. For this purpose, we are taking on the challenge of what it takes to beat Yelp.</p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center"> 
+          <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 750px; height: 742px;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;Word_Count_Attr&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='750' height='742' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Word_Count_Attr&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;Word_Count_Attr&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="section-title text-center center wow fadeInDown">
+        <hr>
+      </div>
+
+      <div class="row wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="about-text text-center">
+            <h3><span class="color">Who</span> we are</h3>
+            <p>We are a group of four information technology students, two undergrad, and two masters, from Carnegie Mellon University. Our career paths have led us all to the Data Pipeline master course offered at the Human Computer Interaction Master Program. In this course we have learned may steps of the data pipeline, all leading to our final project which you have before you.</p>
+            <h3><span class="color">What's</span> our Purpose</h3>
+            <p>For our final project, which we have to encompass the whole data pipeline, we chose the Yelp Dataset Challenge. We were attracted to this set due to recent publicity about ho the city of Pittsburgh is considered one of the top food cities. Our task in this project is to explore and gain some insightful insights on the data. For this purpose, we are taking on the challenge of what it takes to beat Yelp.</p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-12 text-center"> 
+          <div id="chart1"></div>
+        </div>
+      </div>
+
+      <div class="section-title text-center center wow fadeInDown">
+        <hr>
+      </div>
+
+      <div class="row wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="about-text text-center">
+            <h3><span class="color">Who</span> we are</h3>
+            <p>We are a group of four information technology students, two undergrad, and two masters, from Carnegie Mellon University. Our career paths have led us all to the Data Pipeline master course offered at the Human Computer Interaction Master Program. In this course we have learned may steps of the data pipeline, all leading to our final project which you have before you.</p>
+            <h3><span class="color">What's</span> our Purpose</h3>
+            <p>For our final project, which we have to encompass the whole data pipeline, we chose the Yelp Dataset Challenge. We were attracted to this set due to recent publicity about ho the city of Pittsburgh is considered one of the top food cities. Our task in this project is to explore and gain some insightful insights on the data. For this purpose, we are taking on the challenge of what it takes to beat Yelp.</p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-12 text-center"> 
+          <div id="chart2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Services Section -->
 <div id="services-section" class="text-center">
@@ -746,8 +848,13 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/owl.carousel.js"></script> 
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="/js/sankey.js"></script>
+
 <!-- Javascripts
     ================================================== --> 
 <script type="text/javascript" src="js/main.js"></script>
+
+
 </body>
 </html>
