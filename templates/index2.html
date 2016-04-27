@@ -412,7 +412,7 @@
         <div class="thumbnail"> <img src="img/team/sophia.jpg" alt="..." class="team-img">
           <div class="caption">
             <h3>Li (Sophia) He</h3>
-            <p>MISM - Public Policy</p>
+            <p>Public Policy</p>
           </div>
         </div>
       </div>
@@ -452,11 +452,11 @@
 <div id="contact-section">
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h2>Contact us</h2>
+      <h2>Predict Expected Ranking</h2>
       <hr>
       <div class="clearfix"></div>
     </div>
-    <div class="col-md-4 wow fadeInDown" data-wow-delay="200ms">
+<!--     <div class="col-md-4 wow fadeInDown" data-wow-delay="200ms">
       <h3>Contact Info</h3>
       <div class="space"></div>
       <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
@@ -465,30 +465,166 @@
       <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
       <div class="space"></div>
       <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
-    </div>
-    <div class="col-md-8 wow fadeInDown" data-wow-delay="200ms">
-      <h3>Leave us a message</h3>
+    </div> -->
+    <div class="col-md-12 wow fadeInDown" data-wow-delay="200ms">
+      <h3>Fill out the features of your restaurant</h3>
       <form name="sentMessage" id="contactForm" novalidate>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-2">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <h4>Take Out</h4>
+              <input type="checkbox" id="take-out" class="form-control">
               <p class="help-block text-danger"></p>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-2">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <h4>Reservations</h4>
+              <input type="checkbox" id="reservations" class="form-control">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <h4>Catering</h4>
+              <input type="checkbox" id="catering" class="form-control">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <h4>Wifi</h4>
+              <input type="checkbox" id="wifi" class="form-control">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <h4>Drive-Thru</h4>
+              <input type="checkbox" id="drive-through" class="form-control">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <h4>Alcohol</h4>
+              <input type="checkbox" id="alcohol" class="form-control">
               <p class="help-block text-danger"></p>
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <h4>Neighborhoods</h4>
+              <select id="neighborhoods" name="neighborhoods" class="form-control" required="required">
+                <option value="40">Not Available</option>
+                <option value="22">Etna</option>
+                <option value="30">Homestead</option>
+                <option value="7">Bellevue</option>
+                <option value="59">Windgap</option>
+                <option value="23">Friendship</option>
+                <option value="44">Point Breeze</option>
+                <option value="47">Shadyside</option>
+                <option value="36">Morningside</option>
+                <option value="21">East Liberty</option>
+                <option value="28">Highland Park</option>
+                <option value="8">Bloomfield</option>
+                <option value="37">Mt. Oliver</option>
+                <option value="50">South Side</option>
+                <option value="1">Allentown</option>
+                <option value="13">Carrick</option>
+                <option value="43">Overbrook</option>
+                <option value="11">Brookline</option>
+                <option value="39">North Side</option>
+                <option value="56">Troy Hill</option>
+                <option value="10">Brighton Heights</option>
+                <option value="42">Observatory Hill</option>
+                <option value="15">Dormont</option>
+                <option value="16">Dormont Banksville</option>
+                <option value="6">Beechview</option>
+                <option value="5">Banksville Beechview</option>
+                <option value="4">Banksville</option>
+                <option value="27">Greentree</option>
+                <option value="57">West End</option>
+                <option value="14">Crafton Heights</option>
+                <option value="17">Downtown</option>
+                <option value="54">Strip District</option>
+                <option value="12">Carnegie</option>
+                <option value="24">Garfield</option>
+                <option value="34">Lawrenceville</option>
+                <option value="52">Squirrel Hill</option>
+                <option value="26">Greenfield</option>
+                <option value="35">Millvale</option>
+                <option value="19">Duquesne Heights_Mt. Washington</option>
+                <option value="38">Mt. Washington</option>
+                <option value="18">Duquesne Heights</option>
+                <option value="41">Oakland</option>
+                <option value="49">Sharpsburg </option>
+                <option value="2">Aspinwall</option>
+                <option value="53">Squirrel Hill_Hazelwood </option>
+                <option value="55">The Hill District </option>
+                <option value="45">Polish Hill </option>
+                <option value="46">Regent Square </option>
+                <option value="51">South Side Slopes </option>
+                <option value="33">Larimer </option>
+                <option value="32">Knoxville </option>
+                <option value="20">East Carnegie_Greentree </option>
+                <option value="3">Avalon</option>
+                <option value="31">Homewood </option>
+                <option value="25">Garfield_Bloomfield </option>
+                <option value="29">Highland Park_East Liberty </option>
+                <option value="9">Bon Air  </option>
+                <option value="58">West View </option>
+                <option value="48">Shadyside_Friendship </option>
+              </select>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <h4>Attire</h4>
+              <select id="attire" name="attire" class="form-control" required="required">
+                <option value="1">Not Available</option>
+                <option value="2">Casual</option>
+                <option value="3">Dressy</option>
+                <option value="4">Formal</option>
+              </select>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <h4>Price Range</h4>
+              <select id="price" name="price" class="form-control" required="required">
+                <option value="1">$</option>
+                <option value="2">$$</option>
+                <option value="3">$$$</option>
+                <option value="4">$$$$</option>
+                <option value="5">$$$$$</option>
+              </select>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div><div class="col-md-3">
+            <div class="form-group">
+              <h4>Noise Level</h4>
+              <select id="noise" name="noise" class="form-control" required="required">
+                <option value="1">Not Available</option>
+                <option value="4">Quiet</option>
+                <option value="2">Average</option>
+                <option value="3">Loud</option>
+                <option value="5">Very Loud</option>
+              </select>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
         </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
+        <div id="ranking"></div>
+        
+        <div class="row text-center">
+          <button class="btn btn-default" onclick="getRanking();">Get Ranking!</button>
+        </div>
       </form>
     </div>
   </div>
@@ -749,6 +885,34 @@ pitts.formula <- score ~ Take.out +
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="/js/sankey.js"></script>
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script type="text/javascript">
+  function getRanking(){
+    var takeout = $("#take-out").is(":checked") ? 1 : 0;
+    var reservations = $("#reservations").is(":checked") ? 1 : 0;
+    var catering = $("#catering").is(":checked") ? 1 : 0;
+    var wifi = $("#wifi").is(":checked") ? 1 : 0;
+    var drivethu = $("#drive-through").is(":checked") ? 1 : 0;
+    var alcohol = $("#alcohol").is(":checked") ? 1 : 0;
+    var neighborhoods = parseInt($("#neighborhoods").val());
+    var attire = parseInt($("#attire").val());
+    var pricerange = parseInt($("#price").val());
+    var noiselevel = parseInt($("#noise").val());
+
+    var score = 59.1108 + (0.0142 * takeout) + (0.0167 * reservations) + (0.0364 * catering) + (-0.0733 * neighborhoods) + (10.3140 * wifi) + (0.0106 * drivethu) + (0.0793 * alcohol) +  (8.2621 * attire) + (-0.0104 * pricerange) + (-0.9111 * noiselevel);
+
+    var ranking = Math.round(102 - score);
+
+    $("#ranking").html('<div class="row wow fadeInDown text-center" data-wow-delay="400ms"><div class="col-md-12 col-sm-12"><div class="achievement-box"> <span class="count" style="color: black;">' + ranking + '</span><h4 style="color:black;">Ranking</h4></div></div></div>');
+
+    $('#ranking span.count').counterUp({
+          delay: 10, // the delay time in ms
+      time: 1000 // the speed time in ms
+      });
+  }
+</script>
 
 <!-- Javascripts
     ================================================== --> 
