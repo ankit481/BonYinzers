@@ -74,7 +74,7 @@
         <li><a href="#understand-section" class="page-scroll">Understand Yelp</a></li>
         <li><a href="#analysis-section" class="page-scroll">Feature Analysis</a></li>
         <li><a href="#services-section" class="page-scroll">Services</a></li>
-        <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
+        <li><a href="#method-section" class="page-scroll">Methodology</a></li>
         <li><a href="#team-section" class="page-scroll">Team</a></li>
         <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
         <li><a href="#contact-section" class="page-scroll">Contact</a></li>
@@ -315,7 +315,7 @@
   </div>
 </div>
 <!-- Portfolio Section -->
-<div id="works-section">
+<div id="method-section">
   <div class="container"> <!-- Container -->
     <div class="section-title text-center wow fadeInDown">
       <h2>Our Approach/Methodology</h2>
@@ -334,7 +334,7 @@
                 <p>Step 1</p>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/01-preview.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 machine">
@@ -345,7 +345,7 @@
                 <p>Step 2</p>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/02-preview.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 machine">
@@ -356,7 +356,7 @@
                 <p>Step 3</p>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/03-preview.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 machine">
@@ -366,8 +366,8 @@
                 <h4>Regression</h4>
                 <p>Step 4</p>
                 <div class="clearfix"></div>
-                <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+              <img src="img/portfolio/04-preview.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
       </div>
@@ -529,15 +529,12 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-responsive img-centered" src="img/portfolio/01-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <h2>Starting Points</h2>
+            <p class="item-intro">We first needed to do some initial data collection and then cleaning.</p>
+            <img class="img-responsive img-centered" src="img/portfolio/01.jpg" alt="">
+            <p>As a starting point, a python scraper was designed to scrap and convert JSON data from Yelp to CSV format for further analysis.</p>
+            <p>The script was further modified to create neighbour and sub categories data sets. The respective data sets contained binarized columns representing neighbours and sub categories mapped to business IDs.</p>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Step</button>
           </div>
         </div>
       </div>
@@ -557,15 +554,13 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-responsive img-centered" src="img/portfolio/02-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <h2>Modelling</h2>
+            <p class="item-intro">We modelled the data that we had and did some feature selection.</p>
+            <img class="img-responsive img-centered" src="img/portfolio/02.jpg" alt="">
+            <p>By and large, our product aims at generated an expecting ranking bin for a business owner for different values of the attributes selected in the model. This gave us an opportunity to leverage ensemble models to identify features that most most influence for Ranking of Restaurants.</p>
+            <p>A 10-fold cross validated “Gradient Boosting Machine” was implemented to compensate for bias-variance tradeoff.</p>
+            <p>By implementing the model, we identified the following variables that best affect the Rankings: An interesting insight reveals that socio economic factors dominate Rankings more than Neighbourhoods, which typically are the first choice for new business owners to look at.</p>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Step</button>
           </div>
         </div>
       </div>
@@ -585,15 +580,12 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-responsive img-centered" src="img/portfolio/03-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <h2>Gradient Boosting Machine</h2>
+            <p class="item-intro">We used Gradient Boosting Machine to select the most important features.</p>
+            <img class="img-responsive img-centered" src="img/portfolio/03.jpg" alt="">
+            <p>In gradient boosting machines, or simply, GBMs, the learning procedure consecutively fits new models to provide a more accurate estimate of the response variable. The principle idea behind this algorithm is to construct the new base-learners to be maximally correlated with the negative gradient of the loss function, associated with the whole ensemble. The loss functions applied can be arbitrary, but to give a better intuition, if the error function is the classic squared-error loss, the learning procedure would result in consecutive error-fitting. In general, the choice of the loss function is up to the researcher, with both a rich variety of loss functions derived so far and with the possibility of implementing one's own task-specific loss.</p>
+            <p>This high flexibility makes the GBMs highly customizable to any particular data-driven task. It introduces a lot of freedom into the model design thus making the choice of the most appropriate loss function a matter of trial and error. However, boosting algorithms are relatively simple to implement, which allows one to experiment with different model designs.</p>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Step</button>
           </div>
         </div>
       </div>
@@ -613,15 +605,28 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-responsive img-centered" src="img/portfolio/04-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
+            <h2>Regression</h2>
+            <p class="item-intro">We lastly used regression on the selected features to predict rankings.</p>
+            <img class="img-responsive img-centered" src="img/portfolio/04.jpg" alt="">
+            <p>Having found the optimal subset of features, we went ahead and implemented a Robust Linear Regression model using Leave One Out Cross Validation.</p>
+            <p>Formula Used:
+pitts.formula <- score ~ Take.out +
+  Takes.Reservations +
+  Caters             +
+  neighborhoods      +
+  Wi.Fi              +
+  Drive.Thru         +
+  Alcohol            +
+  hours.Thursday.open  +
+  Attire             +
+  Price.Range +
+  Noise.Level</p>
+            <p>Above is the regression results that we found.</p>
             <ul class="list-inline">
               <li><span>Client</span>: John Doe</li>
               <li><span>Service</span>: Web Design</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Step</button>
           </div>
         </div>
       </div>
