@@ -255,7 +255,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 /* Gallery Section 
 ==============================*/
-#works-section {
+#method-section {
 	padding: 100px 0 0 0;
 }
 .categories {
@@ -356,7 +356,7 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
-#works-section i.fa {
+#method-section i.fa {
 	height: 30px;
 	width: 30px;
 	border: 1px solid rgba(25,181,254,0.3);
