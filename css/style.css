@@ -669,3 +669,12 @@ label {
 .tableauPlaceholder{
     height: 600px !important;
 }
+
+.viz-title{
+	font-weight: 600;
+	color: #C26767;
+}
+
+.viz-subtitle{
+	color: #f38181;
+}
