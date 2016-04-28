@@ -239,7 +239,13 @@ header p {
 	background: -moz-linear-gradient(top, #ffffff 50%, #f6f6f6 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ffffff 50%, #f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 50%, #f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0 ); /* IE6-9 */
+}
+#services-section{
+	padding: 100px 0 60px 0;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url(../img/testimonials-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 }
 .space {
 	margin-top: 40px;
@@ -577,7 +583,7 @@ label {
 	background: #fbfbfb;
 	border: 2px solid #ccc;
 	padding: 10px 20px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-left: 0;
 	color: #aaa;
 	font-size: 15px;
@@ -677,4 +683,13 @@ label {
 
 .viz-subtitle{
 	color: #f38181;
+}
+
+.service p{
+	font-weight: 600;
+}
+
+.toggle-on{
+	background-color: #f59898 !important;
+	color: white !important;
 }
