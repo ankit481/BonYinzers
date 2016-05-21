@@ -5,6 +5,8 @@ Yelp Data Analysis
 
 The web application can be found at: [http://bon-yinzers.appspot.com/](http://bon-yinzers.appspot.com/)
 
+GitHub repo: http://github.com/rahuang/BonYinzers
+
 ### About
 We are a group of four information technology students, two undergrad, and two masters, from Carnegie Mellon University. Our career paths have led us all to the Data Pipeline master course offered at the Human Computer Interaction Master Program. In this course we have learned may steps of the data pipeline, all leading to our final project which you have before you.
 
